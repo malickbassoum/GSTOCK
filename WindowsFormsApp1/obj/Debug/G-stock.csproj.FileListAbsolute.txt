@@ -1,0 +1,17 @@
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\G-stock.csproj.AssemblyReference.cache
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PL.FRM_menu.resources
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\G-stock.csproj.GenerateResource.cache
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\G-stock.csproj.CoreCompileInputs.cache
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\G-stock.csproj.CopyComplete
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PL.FRM_Connexion.resources
