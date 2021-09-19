@@ -13,10 +13,10 @@ namespace WindowsFormsApp1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbStockContext : DbContext
+    public partial class DbStockContext : DbContext
     {
-        public dbStockContext()
-            : base("name=dbStockContext")
+        public DbStockContext()
+            : base("name=DbStockContext")
         {
         }
     
