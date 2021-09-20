@@ -118,6 +118,7 @@ namespace WindowsFormsApp1.PL
 			this.textName.Size = new System.Drawing.Size(381, 38);
 			this.textName.TabIndex = 6;
 			this.textName.Text = "Nom Utilisateur";
+			this.textName.TextChanged += new System.EventHandler(this.textName_TextChanged);
 			this.textName.Enter += new System.EventHandler(this.textName_Enter);
 			this.textName.Leave += new System.EventHandler(this.textName_Leave);
 			// 
@@ -158,7 +159,7 @@ namespace WindowsFormsApp1.PL
 			this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.login_32;
 			this.pictureBox1.Location = new System.Drawing.Point(16, 237);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(52, 46);
+			this.pictureBox1.Size = new System.Drawing.Size(52, 49);
 			this.pictureBox1.TabIndex = 10;
 			this.pictureBox1.TabStop = false;
 			// 

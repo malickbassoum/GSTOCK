@@ -83,6 +83,12 @@
     <Compile Include="Details_Commande.cs">
       <DependentUpon>Dbstock.tt</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_Ajoute_Modifier_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Ajoute_Modifier_Client.Designer.cs">
+      <DependentUpon>FRM_Ajoute_Modifier_Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     <Compile Include="Utilisateur.cs">
       <DependentUpon>Dbstock.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PL\FRM_Ajoute_Modifier_Client.resx">
+      <DependentUpon>FRM_Ajoute_Modifier_Client.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_Connexion.resx">
       <DependentUpon>FRM_Connexion.cs</DependentUpon>
     </EmbeddedResource>

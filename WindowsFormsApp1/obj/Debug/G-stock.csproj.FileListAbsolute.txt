@@ -33,3 +33,4 @@ D:\G_STOCK\WindowsFormsApp1\obj\Debug\G-stock.csproj.CopyComplete
 D:\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PL.USER_Liste_Client.resources
+D:\G_STOCK\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PL.FRM_Ajoute_Modifier_Client.resources

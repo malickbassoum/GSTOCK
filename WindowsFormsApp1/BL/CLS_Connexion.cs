@@ -9,7 +9,7 @@ namespace WindowsFormsApp1.BL
 	class CLS_Connexion
 	{
 		// fonction pour verifier la connexion
-		public bool ConnexionValide(DbStockContext db, string Nom, string Mot_de_passe)
+		public bool ConnexionValide(dbStockContext db, string Nom, string Mot_de_passe)
 		{
 			Utilisateur u = new Utilisateur(); //table utilisateur
 			u.Nom_Utilisateur = Nom;

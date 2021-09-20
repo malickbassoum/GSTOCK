@@ -5,16 +5,16 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="47df2e30d0ab4cab99ce82cc92ee9843" Name="Diagram1">
-        <EntityTypeShape EntityType="GESTION_STOCKModel.Categorie" Width="1.5" PointX="1.375" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="GESTION_STOCKModel.Client" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="GESTION_STOCKModel.Commande" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="GESTION_STOCKModel.Produit" Width="1.5" PointX="6.25" PointY="4.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="GESTION_STOCKModel.Utilisateur" Width="1.5" PointX="9.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="GESTION_STOCKModel.Details_Commande" Width="1.5" PointX="6.375" PointY="0.875" IsExpanded="true" />
-        <AssociationConnector Association="GESTION_STOCKModel.FK_Produit_Categorie" ManuallyRouted="false" />
-        <AssociationConnector Association="GESTION_STOCKModel.FK_Commande_Client" ManuallyRouted="false" />
-        <AssociationConnector Association="GESTION_STOCKModel.FK_Details_Commande_Commande" ManuallyRouted="false" />
-        <AssociationConnector Association="GESTION_STOCKModel.FK_Details_Commande_Produit" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="GESTION_STOCKModel.Categorie" Width="1.5" PointX="0.5" PointY="0.625" />
+        <EntityTypeShape EntityType="GESTION_STOCKModel.Client" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="GESTION_STOCKModel.Commande" Width="1.5" PointX="5.125" PointY="5.625" />
+        <EntityTypeShape EntityType="GESTION_STOCKModel.Produit" Width="1.5" PointX="4.25" PointY="0.625" />
+        <EntityTypeShape EntityType="GESTION_STOCKModel.Utilisateur" Width="1.5" PointX="10.25" PointY="4.5" />
+        <EntityTypeShape EntityType="GESTION_STOCKModel.Details_Commande" Width="1.5" PointX="7" PointY="1.25" />
+        <AssociationConnector Association="GESTION_STOCKModel.FK_Produit_Categorie" />
+        <AssociationConnector Association="GESTION_STOCKModel.FK_Commande_Client" />
+        <AssociationConnector Association="GESTION_STOCKModel.FK_Details_Commande_Commande" />
+        <AssociationConnector Association="GESTION_STOCKModel.FK_Details_Commande_Produit" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

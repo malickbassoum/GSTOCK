@@ -51,5 +51,13 @@ namespace WindowsFormsApp1.PL
 			dvgClient.Rows[0].Cells[6].Value = "senegal";
 
 		}
+
+		private void btnAjouterClient_Click(object sender, EventArgs e)
+		{
+			//Afficher le formulaire de saisie
+			PL.FRM_Ajoute_Modifier_Client frmclient = new FRM_Ajoute_Modifier_Client();
+			frmclient.ShowDialog();
+
+		}
 	}
 }

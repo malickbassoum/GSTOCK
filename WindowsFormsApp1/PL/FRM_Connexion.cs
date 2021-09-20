@@ -12,7 +12,7 @@ namespace WindowsFormsApp1.PL
 {
 	public partial class FRM_Connexion : Form
 	{
-		private DbStockContext db;
+		private dbStockContext db;
 		private Form frmmenu;
 		// classe connexion
 		BL.CLS_Connexion C = new BL.CLS_Connexion();
@@ -22,7 +22,7 @@ namespace WindowsFormsApp1.PL
 			this.frmmenu = Menu;
 			//Initialiser la base de donnée
 
-			db = new DbStockContext();
+			db = new dbStockContext();
 		}
 		//Pour vérifier les champs obligatoire
 		string testObligatoire()
@@ -120,6 +120,11 @@ namespace WindowsFormsApp1.PL
 		}
 
 		private void textPassword_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textName_TextChanged(object sender, EventArgs e)
 		{
 
 		}

@@ -1,4 +1,4 @@
-﻿// La génération de code T4 est activée pour le modèle 'C:\Users\mabassoum\source\repos\G_STOCK\WindowsFormsApp1\Dbstock.edmx'. 
+﻿// La génération de code T4 est activée pour le modèle 'D:\G_STOCK\WindowsFormsApp1\Dbstock.edmx'. 
 // Pour activer la génération de code héritée, définissez la valeur de la propriété
 // du concepteur 'Stratégie de génération de code' sur 'ObjectContext hérité'. Cette propriété est disponible dans la fenêtre Propriétés lorsque le modèle
 //  est ouvert dans le concepteur.
@@ -8,4 +8,3 @@
 // d'entité pour le modèle, ouvrez le modèle dans le concepteur, cliquez avec le bouton droit sur l'aire de conception, puis
 // sélectionnez 'Mettre à jour le modèle à partir de la base de données...', 'Générer une base de données à partir du modèle...' ou 'Ajouter un élément de génération
 // de code...'.
-
