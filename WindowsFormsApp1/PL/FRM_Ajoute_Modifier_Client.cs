@@ -14,9 +14,11 @@ namespace WindowsFormsApp1.PL
 {
 	public partial class FRM_Ajoute_Modifier_Client : Form
 	{
-		public FRM_Ajoute_Modifier_Client()
+		private UserControl usclient;
+		public FRM_Ajoute_Modifier_Client(UserControl userC)
 		{
 			InitializeComponent();
+			this.usclient = userC;
 		}
 
 		//les champs obligatoire
@@ -57,7 +59,7 @@ namespace WindowsFormsApp1.PL
 				{
 					new MailAddress(txtEmailClient.Text);
 				}
-				catch(Exception e)
+				catch (Exception )
 				{
 					return "Email Invalide";
 				}
@@ -211,19 +213,62 @@ namespace WindowsFormsApp1.PL
 			}
 		}
 
+		public int IDselect;
+
 		private void btnEnregistrer_Click(object sender, EventArgs e)
 		{
 			if(testobligatoire()!=null)
 			{
 				MessageBox.Show(testobligatoire(),"Obligatoire",MessageBoxButtons.OK,MessageBoxIcon.Error);
+			}else
+			if(lblTitre.Text == "Atouter Client")
+			{   
+				BL.CLS_Client clsclient = new BL.CLS_Client();
+				if (clsclient.Ajouter_Client(txtNomClient.Text, txtPrenomClient.Text, txtAdresseClient.Text, textTelephoneClient.Text, txtEmailClient.Text, txtPaysClient.Text, txtVilleClient.Text)==true)
+				{
+					MessageBox.Show("Client Ajouter avec succes","Ajouter", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+					(usclient as USER_Liste_Client).Actualiserdatagrid();
+				}else
+				{
+					MessageBox.Show("Nom et prenom existent deja dans la base", "Ajouter", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
 			}
-		}
+			else // si lbltitre = Modifier Client
+			{
+				BL.CLS_Client clsclient = new BL.CLS_Client();
+				
+				DialogResult R = MessageBox.Show("voulez vous vraiment modifier mle client", "modification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+				if(R== DialogResult.Yes)
+				{
+					clsclient.Modifer_Client(IDselect, txtNomClient.Text, txtPrenomClient.Text, txtAdresseClient.Text, textTelephoneClient.Text, txtEmailClient.Text, txtPaysClient.Text, txtVilleClient.Text);
+					// Actualiser datagridview
+					(usclient as USER_Liste_Client).Actualiserdatagrid();
+					MessageBox.Show("Client Modifié avec succes", "Modification", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+				}
+				else
+				{
+					MessageBox.Show("Modification est annulé", "Modification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				}
+			}
+
+				
+				
+				
+			}
+			
 
 		private void btnActualiser_Click(object sender, EventArgs e)
 		{
 			// vider les textbox
-
+			txtNomClient.Text = "Nom Client"; txtNomClient.ForeColor = Color.Silver;
+			txtPrenomClient.Text = "Prenom Client"; txtPrenomClient.ForeColor = Color.Silver;
+			txtAdresseClient.Text = "Adresse Client"; txtAdresseClient.ForeColor = Color.Silver;
+			textTelephoneClient.Text = "Telephone Client"; textTelephoneClient.ForeColor = Color.Silver;
+			txtEmailClient.Text = "Email Client"; txtEmailClient.ForeColor = Color.Silver;
+			txtPaysClient.Text = "Pays Client"; txtPaysClient.ForeColor = Color.Silver;
+			txtVilleClient.Text = "Ville Client"; txtVilleClient.ForeColor = Color.Silver;
 
 		}
 	}
+
 }

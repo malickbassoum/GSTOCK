@@ -73,7 +73,7 @@ namespace WindowsFormsApp1.PL
 			this.panel1.Controls.Add(this.btnclient);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.panel1.Margin = new System.Windows.Forms.Padding(2);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(220, 479);
 			this.panel1.TabIndex = 0;
@@ -85,7 +85,7 @@ namespace WindowsFormsApp1.PL
 			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button3.Image = global::WindowsFormsApp1.Properties.Resources.Menu_32;
 			this.button3.Location = new System.Drawing.Point(162, 2);
-			this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button3.Margin = new System.Windows.Forms.Padding(2);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(59, 27);
 			this.button3.TabIndex = 4;
@@ -96,7 +96,7 @@ namespace WindowsFormsApp1.PL
 			// 
 			this.pnlbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.pnlbut.Location = new System.Drawing.Point(2, 113);
-			this.pnlbut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.pnlbut.Margin = new System.Windows.Forms.Padding(2);
 			this.pnlbut.Name = "pnlbut";
 			this.pnlbut.Size = new System.Drawing.Size(10, 60);
 			this.pnlbut.TabIndex = 4;
@@ -112,7 +112,7 @@ namespace WindowsFormsApp1.PL
 			this.btnutilisateur.Image = global::WindowsFormsApp1.Properties.Resources.customer_service_icon;
 			this.btnutilisateur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnutilisateur.Location = new System.Drawing.Point(2, 351);
-			this.btnutilisateur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnutilisateur.Margin = new System.Windows.Forms.Padding(2);
 			this.btnutilisateur.Name = "btnutilisateur";
 			this.btnutilisateur.Size = new System.Drawing.Size(241, 48);
 			this.btnutilisateur.TabIndex = 8;
@@ -131,7 +131,7 @@ namespace WindowsFormsApp1.PL
 			this.btncommande.Image = global::WindowsFormsApp1.Properties.Resources.shopping_icon;
 			this.btncommande.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btncommande.Location = new System.Drawing.Point(2, 298);
-			this.btncommande.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btncommande.Margin = new System.Windows.Forms.Padding(2);
 			this.btncommande.Name = "btncommande";
 			this.btncommande.Size = new System.Drawing.Size(244, 49);
 			this.btncommande.TabIndex = 7;
@@ -150,7 +150,7 @@ namespace WindowsFormsApp1.PL
 			this.btncategorie.Image = ((System.Drawing.Image)(resources.GetObject("btncategorie.Image")));
 			this.btncategorie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btncategorie.Location = new System.Drawing.Point(2, 245);
-			this.btncategorie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btncategorie.Margin = new System.Windows.Forms.Padding(2);
 			this.btncategorie.Name = "btncategorie";
 			this.btncategorie.Size = new System.Drawing.Size(243, 49);
 			this.btncategorie.TabIndex = 6;
@@ -169,7 +169,7 @@ namespace WindowsFormsApp1.PL
 			this.btnproduit.Image = global::WindowsFormsApp1.Properties.Resources.shop_cart_add_icon;
 			this.btnproduit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnproduit.Location = new System.Drawing.Point(8, 177);
-			this.btnproduit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnproduit.Margin = new System.Windows.Forms.Padding(2);
 			this.btnproduit.Name = "btnproduit";
 			this.btnproduit.Size = new System.Drawing.Size(236, 50);
 			this.btnproduit.TabIndex = 5;
@@ -188,7 +188,7 @@ namespace WindowsFormsApp1.PL
 			this.btnclient.Image = global::WindowsFormsApp1.Properties.Resources.Office_Client_Male_Light_icon;
 			this.btnclient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnclient.Location = new System.Drawing.Point(15, 118);
-			this.btnclient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnclient.Margin = new System.Windows.Forms.Padding(2);
 			this.btnclient.Name = "btnclient";
 			this.btnclient.Size = new System.Drawing.Size(229, 55);
 			this.btnclient.TabIndex = 4;
@@ -202,7 +202,7 @@ namespace WindowsFormsApp1.PL
 			this.panel2.Controls.Add(this.pnlParamettrer);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel2.Location = new System.Drawing.Point(220, 0);
-			this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.panel2.Margin = new System.Windows.Forms.Padding(2);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(684, 27);
 			this.panel2.TabIndex = 1;
@@ -215,7 +215,7 @@ namespace WindowsFormsApp1.PL
 			this.pnlParamettrer.Controls.Add(this.button6);
 			this.pnlParamettrer.Controls.Add(this.button5);
 			this.pnlParamettrer.Location = new System.Drawing.Point(41, 30);
-			this.pnlParamettrer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.pnlParamettrer.Margin = new System.Windows.Forms.Padding(2);
 			this.pnlParamettrer.Name = "pnlParamettrer";
 			this.pnlParamettrer.Size = new System.Drawing.Size(286, 142);
 			this.pnlParamettrer.TabIndex = 11;
@@ -229,7 +229,7 @@ namespace WindowsFormsApp1.PL
 			this.button8.Image = global::WindowsFormsApp1.Properties.Resources.Deconnecte;
 			this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button8.Location = new System.Drawing.Point(4, 106);
-			this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button8.Margin = new System.Windows.Forms.Padding(2);
 			this.button8.Name = "button8";
 			this.button8.Size = new System.Drawing.Size(278, 36);
 			this.button8.TabIndex = 3;
@@ -245,7 +245,7 @@ namespace WindowsFormsApp1.PL
 			this.button7.Image = global::WindowsFormsApp1.Properties.Resources.Download;
 			this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button7.Location = new System.Drawing.Point(4, 69);
-			this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button7.Margin = new System.Windows.Forms.Padding(2);
 			this.button7.Name = "button7";
 			this.button7.Size = new System.Drawing.Size(278, 36);
 			this.button7.TabIndex = 2;
@@ -261,7 +261,7 @@ namespace WindowsFormsApp1.PL
 			this.button6.Image = global::WindowsFormsApp1.Properties.Resources.Download;
 			this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button6.Location = new System.Drawing.Point(6, 29);
-			this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button6.Margin = new System.Windows.Forms.Padding(2);
 			this.button6.Name = "button6";
 			this.button6.Size = new System.Drawing.Size(280, 36);
 			this.button6.TabIndex = 1;
@@ -277,7 +277,7 @@ namespace WindowsFormsApp1.PL
 			this.button5.Image = global::WindowsFormsApp1.Properties.Resources.Connected_16;
 			this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button5.Location = new System.Drawing.Point(2, 0);
-			this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button5.Margin = new System.Windows.Forms.Padding(2);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(280, 36);
 			this.button5.TabIndex = 0;
@@ -303,10 +303,10 @@ namespace WindowsFormsApp1.PL
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.pnlAffiche.BackColor = System.Drawing.SystemColors.Control;
-			this.pnlAffiche.Location = new System.Drawing.Point(0, 43);
-			this.pnlAffiche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.pnlAffiche.Location = new System.Drawing.Point(0, 139);
+			this.pnlAffiche.Margin = new System.Windows.Forms.Padding(2);
 			this.pnlAffiche.Name = "pnlAffiche";
-			this.pnlAffiche.Size = new System.Drawing.Size(681, 407);
+			this.pnlAffiche.Size = new System.Drawing.Size(681, 311);
 			this.pnlAffiche.TabIndex = 15;
 			// 
 			// pnlParamettre
@@ -316,13 +316,15 @@ namespace WindowsFormsApp1.PL
 			this.pnlParamettre.Controls.Add(this.btnRestore);
 			this.pnlParamettre.Controls.Add(this.btnCopieApp);
 			this.pnlParamettre.Controls.Add(this.btnConnecter);
-			this.pnlParamettre.Location = new System.Drawing.Point(47, 3);
+			this.pnlParamettre.Location = new System.Drawing.Point(47, 5);
 			this.pnlParamettre.Name = "pnlParamettre";
-			this.pnlParamettre.Size = new System.Drawing.Size(287, 36);
+			this.pnlParamettre.Size = new System.Drawing.Size(280, 131);
 			this.pnlParamettre.TabIndex = 14;
 			// 
 			// btnDeconnecter
 			// 
+			this.btnDeconnecter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnDeconnecter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.btnDeconnecter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.btnDeconnecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -330,9 +332,9 @@ namespace WindowsFormsApp1.PL
 			this.btnDeconnecter.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.btnDeconnecter.Image = global::WindowsFormsApp1.Properties.Resources.Deconnecte;
 			this.btnDeconnecter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnDeconnecter.Location = new System.Drawing.Point(0, 96);
+			this.btnDeconnecter.Location = new System.Drawing.Point(3, 96);
 			this.btnDeconnecter.Name = "btnDeconnecter";
-			this.btnDeconnecter.Size = new System.Drawing.Size(283, 33);
+			this.btnDeconnecter.Size = new System.Drawing.Size(274, 33);
 			this.btnDeconnecter.TabIndex = 3;
 			this.btnDeconnecter.Text = "Déconnecter";
 			this.btnDeconnecter.UseVisualStyleBackColor = true;
@@ -340,6 +342,8 @@ namespace WindowsFormsApp1.PL
 			// 
 			// btnRestore
 			// 
+			this.btnRestore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnRestore.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.btnRestore.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -349,13 +353,15 @@ namespace WindowsFormsApp1.PL
 			this.btnRestore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnRestore.Location = new System.Drawing.Point(3, 62);
 			this.btnRestore.Name = "btnRestore";
-			this.btnRestore.Size = new System.Drawing.Size(280, 33);
+			this.btnRestore.Size = new System.Drawing.Size(274, 33);
 			this.btnRestore.TabIndex = 2;
 			this.btnRestore.Text = "Restaurer une copie enregistrée";
 			this.btnRestore.UseVisualStyleBackColor = true;
 			// 
 			// btnCopieApp
 			// 
+			this.btnCopieApp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnCopieApp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.btnCopieApp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.btnCopieApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -365,7 +371,7 @@ namespace WindowsFormsApp1.PL
 			this.btnCopieApp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnCopieApp.Location = new System.Drawing.Point(3, 32);
 			this.btnCopieApp.Name = "btnCopieApp";
-			this.btnCopieApp.Size = new System.Drawing.Size(280, 33);
+			this.btnCopieApp.Size = new System.Drawing.Size(274, 33);
 			this.btnCopieApp.TabIndex = 1;
 			this.btnCopieApp.Text = "Créer une copie de l\'pplication";
 			this.btnCopieApp.UseVisualStyleBackColor = true;
@@ -373,6 +379,8 @@ namespace WindowsFormsApp1.PL
 			// 
 			// btnConnecter
 			// 
+			this.btnConnecter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnConnecter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.btnConnecter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
 			this.btnConnecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -382,7 +390,7 @@ namespace WindowsFormsApp1.PL
 			this.btnConnecter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnConnecter.Location = new System.Drawing.Point(3, 3);
 			this.btnConnecter.Name = "btnConnecter";
-			this.btnConnecter.Size = new System.Drawing.Size(280, 29);
+			this.btnConnecter.Size = new System.Drawing.Size(274, 30);
 			this.btnConnecter.TabIndex = 0;
 			this.btnConnecter.Text = "Connecter";
 			this.btnConnecter.UseVisualStyleBackColor = true;
@@ -395,7 +403,7 @@ namespace WindowsFormsApp1.PL
 			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button2.Image = global::WindowsFormsApp1.Properties.Resources.Subtract_32;
 			this.button2.Location = new System.Drawing.Point(580, 2);
-			this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button2.Margin = new System.Windows.Forms.Padding(2);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(47, 29);
 			this.button2.TabIndex = 12;
@@ -409,7 +417,7 @@ namespace WindowsFormsApp1.PL
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button1.Image = global::WindowsFormsApp1.Properties.Resources.Shutdown_32;
 			this.button1.Location = new System.Drawing.Point(634, 2);
-			this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button1.Margin = new System.Windows.Forms.Padding(2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(47, 29);
 			this.button1.TabIndex = 11;
@@ -422,7 +430,7 @@ namespace WindowsFormsApp1.PL
 			this.btnParamettre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnParamettre.Image = global::WindowsFormsApp1.Properties.Resources.Settings_32;
 			this.btnParamettre.Location = new System.Drawing.Point(2, 2);
-			this.btnParamettre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnParamettre.Margin = new System.Windows.Forms.Padding(2);
 			this.btnParamettre.Name = "btnParamettre";
 			this.btnParamettre.Size = new System.Drawing.Size(37, 29);
 			this.btnParamettre.TabIndex = 13;
@@ -438,7 +446,7 @@ namespace WindowsFormsApp1.PL
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "FRM_Menu";
 			this.Text = "FRM_Menu";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
