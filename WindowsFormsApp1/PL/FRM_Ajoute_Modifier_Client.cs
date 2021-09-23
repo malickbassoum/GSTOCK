@@ -221,7 +221,7 @@ namespace WindowsFormsApp1.PL
 			{
 				MessageBox.Show(testobligatoire(),"Obligatoire",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}else
-			if(lblTitre.Text == "Atouter Client")
+			if(lblTitre.Text == "Ajouter un Client")
 			{   
 				BL.CLS_Client clsclient = new BL.CLS_Client();
 				if (clsclient.Ajouter_Client(txtNomClient.Text, txtPrenomClient.Text, txtAdresseClient.Text, textTelephoneClient.Text, txtEmailClient.Text, txtPaysClient.Text, txtVilleClient.Text)==true)

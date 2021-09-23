@@ -54,5 +54,16 @@ namespace WindowsFormsApp1.BL
 			}
 
 		}
+		//Fontion supprimer client
+		public void Supprimer_Client(int id)
+		{
+			C = new Client();
+			C = db.Clients.SingleOrDefault(s => s.ID_Client == id);
+			if(C!=null)//existe
+			{
+				db.Clients.Remove(C);// pour supprimer le client
+				db.SaveChanges();
+			}
+		}
 	}
 }

@@ -120,5 +120,49 @@ namespace WindowsFormsApp1.PL
 			}
 			
 		}
+
+		private void btnSupprimerClient_Click(object sender, EventArgs e)
+		{
+			BL.CLS_Client cLS_Client = new BL.CLS_Client();
+			//pour supprimer tout les clients selectionnée
+			int select = 0;
+			for(int i = 0; i<dvgClient.Rows.Count;i++)
+			{
+				if((bool)dvgClient.Rows[i].Cells[0].Value==true)
+				{
+					select++;// combien de lignes selectionnée
+				}
+			}
+			if(select == 0)
+			{
+				MessageBox.Show("Aucun client selectionner", "supprimer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+			else
+			{
+				DialogResult R =
+					MessageBox.Show("Voulez-vous vraiment supprimer", "supprimer", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+				if(R==DialogResult.Yes)
+				{
+					// pour supprimmer toute les clients selectionnée
+					for (int i = 0; i < dvgClient.Rows.Count; i++)
+					{
+						if ((bool)dvgClient.Rows[i].Cells[0].Value == true)
+						{
+							cLS_Client.Supprimer_Client(int.Parse(dvgClient.Rows[i].Cells[1].Value.ToString()));// id client
+						}
+					}
+					//Actualiser datagrid view
+					Actualiserdatagrid();
+					MessageBox.Show("Suppression avec succés", "supprimer", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+				}
+				else
+				{
+					MessageBox.Show("Suppression est annulé", "supprimer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				}
+			}
+		}
+			
+
+		
 	}
 }
