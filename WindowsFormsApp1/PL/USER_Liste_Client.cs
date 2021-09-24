@@ -31,6 +31,9 @@ namespace WindowsFormsApp1.PL
 		{
 			InitializeComponent();
 			db = new dbStockContext();
+			//desactiver textbox de recherche
+			txtRecherche.Enabled = false;
+
 		}
 		//Ajouter Datagridview
 		public void Actualiserdatagrid()
@@ -161,8 +164,53 @@ namespace WindowsFormsApp1.PL
 				}
 			}
 		}
-			
 
-		
+		private void txtRecherche_TextChanged(object sender, EventArgs e)
+		{
+			db = new dbStockContext();
+			var listerecherche = db.Clients.ToList(); // listerecher = liste client
+			if(txtRecherche.Text!= "")// Pas vide
+			{
+				switch (comboRecherche.Text)
+				{
+					 
+					case "Nom":
+						listerecherche = listerecherche.Where(s =>s.Nom_Client.IndexOf(txtRecherche.Text, StringComparison.CurrentCultureIgnoreCase) != -1).ToList();
+						//StringComparison.CurrentCultureIgnoreCase = soit j'ecris la lettre en majuscule ou en miniscule
+						// != -1 existe dans la base de donnée
+						break;
+					case "Prenom":
+						listerecherche = listerecherche.Where(s => s.Prenom_Client.IndexOf(txtRecherche.Text, StringComparison.CurrentCultureIgnoreCase) != -1).ToList();
+						break;
+					case "Telephone":
+						listerecherche = listerecherche.Where(s => s.Telephone_Client.IndexOf(txtRecherche.Text, StringComparison.CurrentCultureIgnoreCase) != -1).ToList();
+						break;
+					case "Email":
+						listerecherche = listerecherche.Where(s => s.Email_Client.IndexOf(txtRecherche.Text, StringComparison.CurrentCultureIgnoreCase) != -1).ToList();
+						break;
+					case "Pays":
+						listerecherche = listerecherche.Where(s => s.Pays_Client.IndexOf(txtRecherche.Text, StringComparison.CurrentCultureIgnoreCase) != -1).ToList();
+						break;
+					case "Ville":
+						listerecherche = listerecherche.Where(s => s.Ville_Client.IndexOf(txtRecherche.Text, StringComparison.CurrentCultureIgnoreCase) != -1).ToList();
+						break;
+				}
+			}
+			//vider data grid
+			dvgClient.Rows.Clear();
+			//ajouter listerecherche dans datagrid view client
+			foreach(var l in listerecherche)
+				{
+				dvgClient.Rows.Add(false, l.ID_Client, l.Nom_Client, l.Prenom_Client, l.Adresse_Client, l.Email_Client, l.Pays_Client, l.Ville_Client);
+				}
+		}
+
+		private void comboRecherche_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			// Activet le textbox recherche si j'ai choisie un champs
+			txtRecherche.Enabled = true;
+			txtRecherche.Text = ""; // vider le textbox de recherche
+
+		}
 	}
 }

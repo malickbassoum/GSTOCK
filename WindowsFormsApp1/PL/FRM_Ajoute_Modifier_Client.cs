@@ -87,7 +87,7 @@ namespace WindowsFormsApp1.PL
 
 		private void txtAdresseClient_Enter(object sender, EventArgs e)
 		{
-			if (txtAdresseClient.Text == "Prenom Client")
+			if (txtAdresseClient.Text == "Adresse Client")
 			{
 				txtAdresseClient.Text = "";
 				txtAdresseClient.ForeColor = Color.White;
@@ -96,7 +96,7 @@ namespace WindowsFormsApp1.PL
 
 		private void textTelephoneClient_Enter(object sender, EventArgs e)
 		{
-			if (textTelephoneClient.Text == "Prenom Client")
+			if (textTelephoneClient.Text == "Telephone Client")
 			{
 				textTelephoneClient.Text = "";
 				textTelephoneClient.ForeColor = Color.White;
@@ -137,7 +137,7 @@ namespace WindowsFormsApp1.PL
 
 		private void textTelephoneClient_Leave(object sender, EventArgs e)
 		{
-			if (textTelephoneClient.Text == "Prenom Client")
+			if (textTelephoneClient.Text == "Telephone Client")
 			{
 				textTelephoneClient.Text = "";
 				textTelephoneClient.ForeColor = Color.Silver;
@@ -146,7 +146,7 @@ namespace WindowsFormsApp1.PL
 
 		private void txtEmailClient_Enter(object sender, EventArgs e)
 		{
-			if (txtEmailClient.Text == "Prenom Client")
+			if (txtEmailClient.Text == "Email Client")
 			{
 				txtEmailClient.Text = "";
 				txtEmailClient.ForeColor = Color.White;
@@ -164,7 +164,7 @@ namespace WindowsFormsApp1.PL
 
 		private void txtVilleClient_Enter(object sender, EventArgs e)
 		{
-			if (txtVilleClient.Text == "Pays Client")
+			if (txtVilleClient.Text == "Ville Client")
 			{
 				txtVilleClient.Text = "";
 				txtVilleClient.ForeColor = Color.White;
@@ -173,7 +173,7 @@ namespace WindowsFormsApp1.PL
 
 		private void txtVilleClient_Leave(object sender, EventArgs e)
 		{
-			if (txtVilleClient.Text == "Pays Client")
+			if (txtVilleClient.Text == "Ville Client")
 			{
 				txtVilleClient.Text = "";
 				txtVilleClient.ForeColor = Color.Silver;
@@ -193,7 +193,7 @@ namespace WindowsFormsApp1.PL
 		private void txtEmailClient_Leave(object sender, EventArgs e)
 		{
 
-			if (txtEmailClient.Text == "Prenom Client")
+			if (txtEmailClient.Text == "Email Client")
 			{
 				txtEmailClient.Text = "";
 				txtEmailClient.ForeColor = Color.Silver;

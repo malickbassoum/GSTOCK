@@ -41,7 +41,7 @@ namespace WindowsFormsApp1.PL
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.comboRecherche = new System.Windows.Forms.ComboBox();
 			this.dvgClient = new System.Windows.Forms.DataGridView();
 			this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
 			this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,8 +50,8 @@ namespace WindowsFormsApp1.PL
 			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dvgClient)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -64,9 +64,10 @@ namespace WindowsFormsApp1.PL
 			this.btnAjouterClient.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.btnAjouterClient.Image = global::WindowsFormsApp1.Properties.Resources.Actions_list_add_icon;
 			this.btnAjouterClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnAjouterClient.Location = new System.Drawing.Point(66, 37);
+			this.btnAjouterClient.Location = new System.Drawing.Point(44, 24);
+			this.btnAjouterClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.btnAjouterClient.Name = "btnAjouterClient";
-			this.btnAjouterClient.Size = new System.Drawing.Size(374, 66);
+			this.btnAjouterClient.Size = new System.Drawing.Size(249, 43);
 			this.btnAjouterClient.TabIndex = 0;
 			this.btnAjouterClient.Text = "Ajouter";
 			this.btnAjouterClient.UseVisualStyleBackColor = false;
@@ -82,9 +83,10 @@ namespace WindowsFormsApp1.PL
 			this.btnModifierClient.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.btnModifierClient.Image = global::WindowsFormsApp1.Properties.Resources.Recycle_iconaaa;
 			this.btnModifierClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnModifierClient.Location = new System.Drawing.Point(615, 37);
+			this.btnModifierClient.Location = new System.Drawing.Point(410, 24);
+			this.btnModifierClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.btnModifierClient.Name = "btnModifierClient";
-			this.btnModifierClient.Size = new System.Drawing.Size(374, 66);
+			this.btnModifierClient.Size = new System.Drawing.Size(249, 43);
 			this.btnModifierClient.TabIndex = 1;
 			this.btnModifierClient.Text = "Modifier";
 			this.btnModifierClient.UseVisualStyleBackColor = false;
@@ -100,9 +102,10 @@ namespace WindowsFormsApp1.PL
 			this.btnSupprimerClient.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.btnSupprimerClient.Image = global::WindowsFormsApp1.Properties.Resources.Close_2_icon;
 			this.btnSupprimerClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSupprimerClient.Location = new System.Drawing.Point(1170, 37);
+			this.btnSupprimerClient.Location = new System.Drawing.Point(780, 24);
+			this.btnSupprimerClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.btnSupprimerClient.Name = "btnSupprimerClient";
-			this.btnSupprimerClient.Size = new System.Drawing.Size(374, 66);
+			this.btnSupprimerClient.Size = new System.Drawing.Size(249, 43);
 			this.btnSupprimerClient.TabIndex = 2;
 			this.btnSupprimerClient.Text = "Supprimer";
 			this.btnSupprimerClient.UseVisualStyleBackColor = false;
@@ -113,9 +116,10 @@ namespace WindowsFormsApp1.PL
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-			this.panel1.Location = new System.Drawing.Point(66, 109);
+			this.panel1.Location = new System.Drawing.Point(44, 71);
+			this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1478, 5);
+			this.panel1.Size = new System.Drawing.Size(985, 3);
 			this.panel1.TabIndex = 3;
 			// 
 			// panel2
@@ -123,9 +127,10 @@ namespace WindowsFormsApp1.PL
 			this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-			this.panel2.Location = new System.Drawing.Point(66, 237);
+			this.panel2.Location = new System.Drawing.Point(44, 154);
+			this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1478, 5);
+			this.panel2.Size = new System.Drawing.Size(985, 3);
 			this.panel2.TabIndex = 5;
 			// 
 			// txtRecherche
@@ -134,13 +139,15 @@ namespace WindowsFormsApp1.PL
 			this.txtRecherche.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.txtRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtRecherche.ForeColor = System.Drawing.Color.DimGray;
-			this.txtRecherche.Location = new System.Drawing.Point(890, 148);
+			this.txtRecherche.Location = new System.Drawing.Point(593, 96);
+			this.txtRecherche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtRecherche.Multiline = true;
 			this.txtRecherche.Name = "txtRecherche";
-			this.txtRecherche.Size = new System.Drawing.Size(334, 45);
+			this.txtRecherche.Size = new System.Drawing.Size(223, 29);
 			this.txtRecherche.TabIndex = 6;
 			this.txtRecherche.Text = "Rechercher";
 			this.txtRecherche.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtRecherche.TextChanged += new System.EventHandler(this.txtRecherche_TextChanged);
 			this.txtRecherche.Enter += new System.EventHandler(this.textBox1_Enter);
 			// 
 			// contextMenuStrip1
@@ -152,9 +159,10 @@ namespace WindowsFormsApp1.PL
 			// panel3
 			// 
 			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-			this.panel3.Location = new System.Drawing.Point(890, 198);
+			this.panel3.Location = new System.Drawing.Point(593, 129);
+			this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(334, 5);
+			this.panel3.Size = new System.Drawing.Size(223, 3);
 			this.panel3.TabIndex = 7;
 			// 
 			// entityCommand1
@@ -165,22 +173,24 @@ namespace WindowsFormsApp1.PL
 			this.entityCommand1.EnablePlanCaching = true;
 			this.entityCommand1.Transaction = null;
 			// 
-			// comboBox1
+			// comboRecherche
 			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.comboRecherche.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comboRecherche.FormattingEnabled = true;
+			this.comboRecherche.Items.AddRange(new object[] {
             "Nom",
             "Prenom",
             "Telephone",
             "Email",
             "Ville",
             "Pays"});
-			this.comboBox1.Location = new System.Drawing.Point(532, 182);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(272, 33);
-			this.comboBox1.TabIndex = 8;
+			this.comboRecherche.Location = new System.Drawing.Point(355, 118);
+			this.comboRecherche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.comboRecherche.Name = "comboRecherche";
+			this.comboRecherche.Size = new System.Drawing.Size(183, 24);
+			this.comboRecherche.TabIndex = 8;
+			this.comboRecherche.SelectedIndexChanged += new System.EventHandler(this.comboRecherche_SelectedIndexChanged);
 			// 
 			// dvgClient
 			// 
@@ -208,18 +218,17 @@ namespace WindowsFormsApp1.PL
             this.Column4,
             this.Column5,
             this.Column8,
-            this.Column6,
-            this.Column7});
+            this.Column7,
+            this.Column6});
 			this.dvgClient.EnableHeadersVisualStyles = false;
-			this.dvgClient.Location = new System.Drawing.Point(66, 249);
-			this.dvgClient.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.dvgClient.Location = new System.Drawing.Point(44, 162);
 			this.dvgClient.Name = "dvgClient";
 			this.dvgClient.RowHeadersVisible = false;
 			this.dvgClient.RowHeadersWidth = 62;
 			this.dvgClient.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
 			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dvgClient.RowsDefaultCellStyle = dataGridViewCellStyle2;
-			this.dvgClient.Size = new System.Drawing.Size(1478, 809);
+			this.dvgClient.Size = new System.Drawing.Size(985, 526);
 			this.dvgClient.TabIndex = 9;
 			// 
 			// Column1
@@ -268,13 +277,6 @@ namespace WindowsFormsApp1.PL
 			this.Column8.Name = "Column8";
 			this.Column8.ReadOnly = true;
 			// 
-			// Column6
-			// 
-			this.Column6.HeaderText = "Ville";
-			this.Column6.MinimumWidth = 8;
-			this.Column6.Name = "Column6";
-			this.Column6.ReadOnly = true;
-			// 
 			// Column7
 			// 
 			this.Column7.HeaderText = "Pays";
@@ -282,12 +284,19 @@ namespace WindowsFormsApp1.PL
 			this.Column7.Name = "Column7";
 			this.Column7.ReadOnly = true;
 			// 
+			// Column6
+			// 
+			this.Column6.HeaderText = "Ville";
+			this.Column6.MinimumWidth = 8;
+			this.Column6.Name = "Column6";
+			this.Column6.ReadOnly = true;
+			// 
 			// USER_Liste_Client
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.dvgClient);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.comboRecherche);
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.txtRecherche);
 			this.Controls.Add(this.panel2);
@@ -295,8 +304,9 @@ namespace WindowsFormsApp1.PL
 			this.Controls.Add(this.btnSupprimerClient);
 			this.Controls.Add(this.btnModifierClient);
 			this.Controls.Add(this.btnAjouterClient);
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "USER_Liste_Client";
-			this.Size = new System.Drawing.Size(1706, 1080);
+			this.Size = new System.Drawing.Size(1137, 702);
 			this.Load += new System.EventHandler(this.USER_Liste_Client_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dvgClient)).EndInit();
 			this.ResumeLayout(false);
@@ -315,7 +325,7 @@ namespace WindowsFormsApp1.PL
 		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
 		private System.Windows.Forms.Panel panel3;
 		private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox comboRecherche;
 		private System.Windows.Forms.DataGridView dvgClient;
 		private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
@@ -324,7 +334,7 @@ namespace WindowsFormsApp1.PL
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
 	}
 }
